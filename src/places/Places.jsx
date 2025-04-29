@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { placeItems } from "../../constants/place";
+import { placeItems } from "../constants/place";
 
 const Places = () => {
 

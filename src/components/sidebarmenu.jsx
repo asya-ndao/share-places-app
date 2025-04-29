@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { menuItems } from "../../constants/menu";
+import { menuItems } from "../constants/menu";
 import Authenticate from "./authenticate-button";
-import { useSidebar } from "../../contexts/sidebar-context";
+import { useSidebar } from "../contexts/sidebar-context";
 
 const Sidebarmenu = () => {
   const { sidebarOpen } = useSidebar();

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import { menuItems } from "../../constants/menu";
+import { menuItems } from "../constants/menu";
 import { Logs } from "lucide-react";
 import Authenticate from "./authenticate-button";
 import Sidebarmenu from "./sidebarmenu";
-import { useSidebar } from "../../contexts/sidebar-context";
+import { useSidebar } from "../contexts/sidebar-context";
 
 const Layout = () => {
   const { toggleSidebar } = useSidebar();
