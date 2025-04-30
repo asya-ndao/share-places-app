@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { placeItems } from "../constants/place";
+import Modal from "@/components/modal-buttons";
 
 const Places = () => {
 
@@ -18,7 +19,7 @@ const Places = () => {
           <div>
             <div className="relative h-[200px]">
               <img
-                src={item.imageUrl}
+                src={item.image}
                 alt="my-places"
                 className="w-full h-full object-cover hover:scale-110 transition-all duration-300 cursor-pointer"
               />
@@ -30,23 +31,7 @@ const Places = () => {
             </div>
 
             {/* Buttons */}
-            <div className=" flex justify-center space-x-4 border-t px-4 py-2">
-                <button className="border border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white
-                font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer"
-                >
-                    View on map
-                </button>
-                <button
-                 className="border focus:outline-none text-white bg-amber-500 hover:bg-amber-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer"
-                >
-                    Edit
-                </button>
-                <button className="focus:outline-none text-white bg-red-600 hover:bg-red-800 focus:ring-4 
-                font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 cursor-pointer"
-                >
-                    DELETE
-                </button>
-            </div>
+            <Modal />
           </div>
         </div>
       ))}
